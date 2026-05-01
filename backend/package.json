@@ -1,0 +1,14 @@
+{
+  "name": "scanvoro-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "email": "cmd /c \"call .venv\\Scripts\\activate && uvicorn email_fastapi.main:app --reload --port 8000\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

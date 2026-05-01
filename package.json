@@ -1,0 +1,17 @@
+{
+  "name": "scanvoro",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root launcher for the Scanvoro frontend and FastAPI email backend.",
+  "scripts": {
+    "start": "concurrently -n API,EMAIL,FRONTEND -c blue,magenta,green \"npm run api\" \"npm run email\" \"npm run frontend\"",
+    "dev": "npm start",
+    "frontend": "npm --prefix frontend run dev",
+    "api": "npm --prefix backend run start",
+    "email": "npm --prefix backend run email",
+    "backend": "npm run api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
