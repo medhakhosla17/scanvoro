@@ -4,7 +4,19 @@
   "outputDirectory": "frontend/dist",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/email-api/(.*)",
+      "destination": "/api/email/$1"
+    },
+    {
+      "source": "/link-checker",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/email-checker",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/bank-statement-checker",
       "destination": "/index.html"
     }
   ]
