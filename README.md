@@ -1,13 +1,11 @@
 # Scanvoro - Fraud Detection Toolkit
 
-Scanvoro is a full-stack rule-based fraud detection toolkit for checking links, scam emails, risky transactions, and sensitive data inside bank statements.
+Scanvoro is a full-stack rule-based fraud detection toolkit for checking links and scam emails.
 
 ## Features
 
 - Link fraud checker with URL-based rules
 - Email scam checker powered by a modular Python FastAPI service
-- Transaction analyzer for risk scoring and alerts
-- Bank statement scanner with sensitive data redaction
 
 ## Project Structure
 
